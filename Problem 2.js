@@ -4,19 +4,15 @@
 //add adds a value to the group (but only if it isn’t already a member), 
 //delete removes its argument from the group (if it was a member), //and has returns a Boolean value indicating whether its argument is a member of the group.
 
-<<<<<<< HEAD
 // Use the === operator, or something equivalent such as indexOf, to determine whether two values are the same.
 
 // Give the class a static from method that takes an iterable object as argument and creates a group that contains all the values produced by iterating over it.
 
-=======
->>>>>>> a3f85d18b71e86e71605e80d483e27f50c33d459
 class Group{
     constructor() {
         this.group = []
     }
     add (value){
-<<<<<<< HEAD
         if(!this.has(value))this.group.push(value)  
     }
     delete (value){
@@ -33,26 +29,12 @@ class Group{
             newGroup.add(item)
         }
         return newGroup
-=======
-        if(!this.group.includes(value))
-            this.group.push(value)
-        
-    }
-    delete (value){
-        if(this.group.includes(value)){
-            this.group.splice(this.group.indexOf(value),1)
-        }
-    }
-    has (){
-
->>>>>>> a3f85d18b71e86e71605e80d483e27f50c33d459
     }
 }
 
 
 
   let group = Group.from([10, 20]);
-<<<<<<< HEAD
 
   console.log(group.has(10));
 //   // → true
@@ -63,13 +45,3 @@ group.delete(10);
 console.log(group)
 console.log(group.has(10));
 //   // → false
-=======
-  console.log(group.has(10));
-  // → true
-  console.log(group.has(30));
-  // → false
-  group.add(10);
-  group.delete(10);
-  console.log(group.has(10));
-  // → false
->>>>>>> a3f85d18b71e86e71605e80d483e27f50c33d459
